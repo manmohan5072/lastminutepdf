@@ -5,7 +5,6 @@ footer.innerHTML =`<nav>
 <div class="./content/images/LOGO.png">
     <h2>last bench</h2>
 </div>
-
 <ul class="links">
     <li><a href="https://lastminutepdf.netlify.app/pages/home">home</a></li>
     <li><a href="https://lastminutepdf.netlify.app/pages/pbooks">programming books</a></li>
