@@ -6,7 +6,7 @@ footer.innerHTML =`<nav>
     <h2>last bench</h2>
 </div>
 <ul class="links">
-    <li><a href="https://lastminutepdf.netlify.app/pages/home">home</a></li>
+    <li><a href="https://lastminutepdf.netlify.app/">home</a></li>
     <li><a href="https://lastminutepdf.netlify.app/pages/pbooks">programming books</a></li>
     <li><a href="https://lastminutepdf.netlify.app/pages/developers">developer</a></li>
     
