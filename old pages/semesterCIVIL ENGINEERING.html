@@ -15,18 +15,54 @@
 
     <link rel="stylesheet" href="../Components/footer.css">
     <style>
+        /* Default styles for the background image */
+        body {
+            /* Add background color */
+            background-color: #ffffff; /* White background */
+        }
+
+        /* Media query for mobile devices */
+        @media only screen and (max-width: 768px) {
+            body {
+                background-size: contain; /* Image will be contained within the viewport */
+                background-position: center; /* Center the image */
+            }
+        }
+
         .selfhead {
-            font-size: 90px;
+            font-size: 60px; /* Decrease font size */
             font-weight: bolder;
-            font-family: 'Baloo Chettan 2', cursive;
+            font-family: 'Baloo Chettan 2', cursive; /* Change font family */
         }
 
         @media only screen and (max-width:485px) {
             .selfhead {
-                font-size: 50px;
-                font-weight: bold;
+                font-size: 15px; /* Decrease font size further for smaller screens */
             }
         }
+
+        /* Center the logo vertically */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin-top: -60px; /* Adjust margin to overlap with navbar */
+        }
+
+        /* Adjust logo size */
+        .logo {
+            max-width: 100%; /* Set maximum width */
+            max-height: 80%; /* Set maximum height */
+        }
+
+        /* Adjust the padding-top for the logo in mobile view */
+        @media only screen and (max-width: 768px) {
+            .logo-container {
+                padding-top: 20px; /* Decrease the padding-top */
+            }
+        }
+
     </style>
 
     <title>Semester</title>
@@ -34,7 +70,7 @@
 
 <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-bottom: 0;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">last bench</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,12 +99,11 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- <div class="container border border-dark my-3 rounded" style="background-color:    rgb(208, 255, 255);">
-        <div class="selfhead text-center" id="about">
-            AKTU SEMESTER BOOKS
-        </div>
-        
-    </div> -->
+    <!-- Add the big logo here -->
+    <div class="logo-container">
+        <img src="https://cdn.dribbble.com/users/748330/screenshots/8224952/media/e18cd734138f9f05a9d09508337d3dd2.gif" alt="Your Big Logo" class="logo">
+    </div>
+    
     <div class="mx-5">
         <a href="https://www.dropbox.com/scl/fo/41k1bsjjz9ieuws7c9c0i/h?rlkey=0d8v2vpa7oqb5iucg6187gkqk&dl=0" style="text-decoration: none;"><div class="border border-dark text-center py-2 my-3 display-3 rounded-pill" style="font-weight: bold; background-color: rgb(169, 94, 255); color: rgb(0, 0, 0);">Semester 1&2</div></a>
         <a href="https://www.dropbox.com/scl/fo/3jp34g0wdg56nriee85u6/h?rlkey=jhqc6e3a4slam6qyy8gquhu8e&dl=0" style="text-decoration: none;"><div class="border border-dark text-center py-2 my-3 display-3 rounded text-dark rounded-pill" style="font-weight: bold; background-color: rgb(255, 255, 75);">Semester 3</div></a>
@@ -78,12 +113,25 @@
         <a href="https://www.dropbox.com/scl/fo/eznm7wb1t4f0npa2ksbpu/h?rlkey=kpwmal9hf5zs23gnnadnq06o4&dl=0" style="text-decoration: none;"><div class="border border-dark text-center py-2 my-3 display-3 rounded text-dark rounded-pill" style="font-weight: bold; background-color: rgb(255, 255, 75);">Semester 7</div></a>
         <a href="https://www.dropbox.com/scl/fo/4tg1ub0j73q5gvrm44q9x/h?rlkey=sjlipraavaksex9zvxwxb6c2k&dl=0" style="text-decoration: none;"><div class="border border-dark bg-info text-center py-2 my-3 display-3 rounded text-dark rounded-pill" style="font-weight: bold;">Semester 8</div></a>  
     </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        <script src="../Components/footer.js"></script>
-
+    <script src="../Components/footer.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/65fa6340a0c6737bd122aa88/1hpd17da0';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 
 </html>
