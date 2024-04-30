@@ -9,6 +9,7 @@ footer.innerHTML =`<nav>
     <li><a href="https://lastminutepdf.netlify.app/">home</a></li>
     <li><a href="https://lastminutepdf.netlify.app/pages/pbooks">programming books</a></li>
     <li><a href="https://lastminutepdf.netlify.app/pages/developers">developer</a></li>
+    <li><a href="https://oldquestionpapers.netlify.app/">last years question papers</a></li>
     
 </ul>
 
