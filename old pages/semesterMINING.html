@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,26 +14,74 @@
 
     <link rel="stylesheet" href="../Components/footer.css">
     <style>
+        /* Default styles for the background image */
+        body {
+            background-color: #ffffff; /* White background */
+        }
+
+        /* Media query for mobile devices */
+        @media only screen and (max-width: 768px) {
+            body {
+                background-size: contain;
+                background-position: center;
+            }
+        }
+
         .selfhead {
-            font-size: 90px;
+            font-size: 60px;
             font-weight: bolder;
             font-family: 'Baloo Chettan 2', cursive;
         }
 
         @media only screen and (max-width:485px) {
             .selfhead {
-                font-size: 50px;
-                font-weight: bold;
+                font-size: 15px;
             }
         }
-    </style>
 
+        /* Adjust logo size */
+        .logo {
+            max-width: 100%;
+            max-height: 80%;
+            margin-top: -60px; /* Adjust margin to overlap with navbar */
+        }
+
+        /* Adjust the padding-top for the logo in mobile view */
+        @media only screen and (max-width: 768px) {
+            .logo {
+                padding-top: 20px; /* Decrease the padding-top */
+            }
+        }
+
+        /* Center buttons horizontally */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px; /* Add space between image and buttons */
+        }
+
+        /* Style for the buttons */
+        .button {
+            width: 100%;
+            max-width: 400px;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px 0;
+            border: 2px solid #000;
+            border-radius: 20px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+        }
+    </style>
     <title>Semester</title>
 </head>
-
 <body>
     <!-- navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-bottom: 0;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">last bench</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,14 +92,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="../index.html">Home</a>
+                        <a class="nav-link " aria-current="page" href="https://lastminutepdf.netlify.app/pages/developers">Home</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="../Pages/pbooks.html">Programming Books</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="../Pages/semester.html">Semester Books</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Pages/developers.html">Developers</a>
@@ -63,12 +106,9 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- <div class="container border border-dark my-3 rounded" style="background-color:    rgb(208, 255, 255);">
-        <div class="selfhead text-center" id="about">
-            AKTU SEMESTER BOOKS
-        </div>
-        
-    </div> -->
+    <!-- Big Logo -->
+    <img src="https://technologystudent.com/joints/iron2a.gif" class="logo">
+
     <div class="mx-5">
         <a href="https://www.dropbox.com/scl/fo/50u42fhm5xvw3qhdpbzjn/h?rlkey=wlms7bzn4sntga180ve27ca6s&dl=0" style="text-decoration: none;"><div class="border border-dark text-center py-2 my-3 display-3 rounded-pill" style="font-weight: bold; background-color: rgb(169, 94, 255); color: rgb(0, 0, 0);">Semester 1&2</div></a>
         <a href="https://www.dropbox.com/scl/fo/zonfzd7rrab8a736ptdx8/h?rlkey=lcp78wa8b462hcufswlsau0vh&dl=0" style="text-decoration: none;"><div class="border border-dark text-center py-2 my-3 display-3 rounded text-dark rounded-pill" style="font-weight: bold; background-color: rgb(255, 255, 75);">Semester 3</div></a>
@@ -78,12 +118,22 @@
         <a href="https://www.dropbox.com/scl/fo/qefxanh5954hn0y1zkay0/h?rlkey=gzjedufebglylvbm6atg5i8wm&dl=0" style="text-decoration: none;"><div class="border border-dark text-center py-2 my-3 display-3 rounded text-dark rounded-pill" style="font-weight: bold; background-color: rgb(255, 255, 75);">Semester 7</div></a>
         <a href="https://www.dropbox.com/scl/fo/khf6kdbzebtzjzqprkwwr/h?rlkey=nwq1ihqodl412qr9v51ruyxnf&dl=0" style="text-decoration: none;"><div class="border border-dark bg-info text-center py-2 my-3 display-3 rounded text-dark rounded-pill" style="font-weight: bold;">Semester 8</div></a>  
     </div>
-
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        <script src="../Components/footer.js"></script>
-
+    <script src="../Components/footer.js"></script>
+    <!-- Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/65fa6340a0c6737bd122aa88/1hpd17da0';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
 </body>
-
 </html>
